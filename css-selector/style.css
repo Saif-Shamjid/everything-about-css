@@ -1,0 +1,58 @@
+*{
+    background-color: cornflowerblue;
+}
+div.lightblue.green_text {
+    background-color: cyan;
+    color: greenyellow;
+}
+
+.red {
+    background-color: rgb(182, 56, 56);
+}
+#blue {
+    background-color: blue;
+}
+
+div.orange, li.orange_text {
+    background-color: orangered;
+    color: orange;
+}
+
+div.list-container ul li{
+    color: greenyellow;
+}
+
+div.many-span > b{
+    background-color: hotpink;
+}
+
+li.orange_text ~ li {
+    background-color: lightcoral;
+}
+
+li.red + li#blue {
+    color: green;
+}
+
+li.red ~ li:hover {
+    background-color: white;
+}
+input.input-1:focus {
+    background-color: violet;
+}
+
+div.list-container li:nth-child(2n):hover {
+    background-color: yellow;
+}
+
+#good:hover::after {
+    content: ' this is from css';
+    background-color: tomato;
+}
+
+[data-red='true'] {
+    background-color: green;
+}
+[data-red='false'] {
+    background-color: red;
+}
