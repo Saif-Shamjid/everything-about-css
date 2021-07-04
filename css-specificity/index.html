@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css-specificity</title>
+
+    <style>
+        body{
+            background-color: grey;
+        }
+        /* 0,1,0,0 */
+        #header{
+            color:aqua;
+        }
+        /* 0,0,1,0 */
+        .header-c {
+            color: lawngreen;
+        }
+        /* 0,0,0,1 */
+        h1 {
+            color: khaki;
+        }
+        .text {
+            color: gold;
+        }
+        /* 0,0,1,0 */
+        .header-2 {
+            background-color: lightpink;
+        }
+        /* 0,0,1,0 It's bellow that why it's selected*/ 
+        .second-header {
+            background-color: lightyellow;
+        }
+
+        /* 0,0,1,1 */
+        h2.red {
+            background-color: maroon;
+        }
+        .red {
+            background-color: red;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <!-- assist video -->
+    <!-- https://youtu.be/CHyPGSpIhSs?list=PLZlA0Gpn_vH9D0J0Mtp6lIiD_8046k3si -->
+    <!-- 1,0,0,0 -->
+    <h1 id="header" class="header-c" style="color: lightcoral;">This is the heading</h1>
+    <h2 class="header-2 second-header">This is a short header</h2>
+    <h2 class="red color-text-black">This is a red header</h2>
+    <p class="text" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora aliquam, praesentium vitae facere natus quae quo amet excepturi, nemo perspiciatis rem aspernatur, sit esse. Quisquam, quos officia quo vitae est ducimus dicta maiores alias quam, sit incidunt temporibus quidem nemo delectus commodi, eaque eius soluta dignissimos!</p>
+</body>
+</html>
